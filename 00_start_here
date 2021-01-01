@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export NEO4J_USERNAME="neo4j"
+export NEO4J_PASSWORD="neo4j1"
+
+project_dir=$(pwd)
+script_dir="${project_dir}"
+cypher_dir="${project_dir}"
+logs_dir="${project_dir}/logs"
+logs_file="fabric.log"
+import_dir="${project_dir}/import"
+
+cypher_shell_exec="cypher-shell"
+

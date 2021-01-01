@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo
+echo ${task}
+echo
+
+execute_cypher() {
+	intermediate_start="$(date -u +%s.%N)"
+	"${cypher_shell_exec}" -d system -f ${1}
+	intermediate_end="$(date -u +%s.%N)"
+	intermediate_elapsed="$(bc <<<"$intermediate_end-$intermediate_start")"
+	echo "`date`-${task}-${2}: Total of ${intermediate_elapsed} seconds." >> "${logs_dir}/${logs_file}"
+}
+
+start_time="$(date -u +%s)"
+echo "`date`-${task}-START" >> "${logs_dir}/${logs_file}"
+

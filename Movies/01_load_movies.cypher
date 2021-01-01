@@ -1,3 +1,8 @@
+:use system
+
+DROP DATABASE movies IF EXISTS;
+CREATE DATABASE MOVIES;
+
 CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
 CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
 CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
@@ -505,3 +510,4 @@ CREATE
 (JessicaThompson)-[:REVIEWED {summary:'You had me at Jerry', rating:92}]->(JerryMaguire)
 ;
 
+:exit

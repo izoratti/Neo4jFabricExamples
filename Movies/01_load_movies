@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source ./00_start_here
+
+task="01: Load Movies"
+
+source "${common_dir}/91_extras_start"
+
+execute_cypher "${cypher_dir}/01_load_movies.cypher" "01 Load Movies"
+
+source "${common_dir}/98_extras_end"
+
+exit 0
+

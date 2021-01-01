@@ -1,0 +1,7 @@
+#!/bin/bash
+
+end_time="$(date -u +%s)"
+elapsed_time="$(($end_time-$start_time))"
+
+echo "`date`-${task}-END: Total of ${elapsed_time} seconds." >> "${logs_dir}/${logs_file}"
+
