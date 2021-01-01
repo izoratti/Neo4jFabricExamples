@@ -1,0 +1,11 @@
+#!/bin/bash
+
+movies_dir=$(pwd)
+
+cd ..
+source ./00_init
+
+script_dir="${movies_dir}"
+cypher_dir="${movies_dir}"
+cd "${movies_dir}"
+

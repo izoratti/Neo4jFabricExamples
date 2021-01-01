@@ -5,6 +5,7 @@ export NEO4J_PASSWORD="neo4j1"
 
 project_dir=$(pwd)
 script_dir="${project_dir}"
+common_dir="${script_dir}/common"
 cypher_dir="${project_dir}"
 logs_dir="${project_dir}/logs"
 logs_file="fabric.log"

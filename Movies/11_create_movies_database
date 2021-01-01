@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#set -x
+
+source ./00_init
+
+task="11: Create Movies Database"
+
+source "${common_dir}/00_extras_start"
+
+execute_cypher "${cypher_dir}/11_create_movies_database.cypher" "11 Create Movies Database"
+
+source "${common_dir}/99_extras_end"
+
+exit 0
+

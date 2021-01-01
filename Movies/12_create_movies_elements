@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#set -x
+
+source ./00_init
+
+task="12: Create Movies Elements"
+
+source "${common_dir}/00_extras_start"
+
+execute_cypher "${cypher_dir}/12_create_movies_elements.cypher" "12 Create Movies Elements"
+
+source "${common_dir}/99_extras_end"
+
+exit 0
+

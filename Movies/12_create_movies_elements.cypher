@@ -1,7 +1,4 @@
-:use system
-
-DROP DATABASE movies IF EXISTS;
-CREATE DATABASE MOVIES;
+:use movies
 
 CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
 CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
