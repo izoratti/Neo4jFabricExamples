@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export NEO4J_USERNAME="neo4j"
+export NEO4J_PASSWORD="neo4j1"
+
+script_dir="."
+cypher_dir="."
+logs_dir="../logs"
+import_dir="../import"
+
+cypher_shell_exec="cypher-shell"
+
